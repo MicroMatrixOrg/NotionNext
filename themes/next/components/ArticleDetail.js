@@ -88,8 +88,7 @@ export default function ArticleDetail(props) {
                     {post && (<NotionPage post={post} />)}
                     <WWAds className="w-full" orientation="horizontal" />
                 </article>
-                {/* 广告嵌入 */}
-                <AdSlot type={'in-article'} />
+
                 {showArticleInfo && <>
 
                     {/* 分享 */}
