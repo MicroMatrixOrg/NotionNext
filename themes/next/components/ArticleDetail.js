@@ -15,7 +15,6 @@ import LazyImage from '@/components/LazyImage'
 import { formatDateFmt } from '@/lib/formatDate'
 import { siteConfig } from '@/lib/config'
 import WWAds from '@/components/WWAds'
-import { AdSlot } from '@/components/GoogleAdsense'
 
 /**
  *
