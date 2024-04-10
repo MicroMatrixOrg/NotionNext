@@ -15,7 +15,7 @@ import LazyImage from '@/components/LazyImage'
 import { formatDateFmt } from '@/lib/utils/formatDate'
 import { siteConfig } from '@/lib/config'
 import WWAds from '@/components/WWAds'
-
+import { AdSlot } from '@/components/GoogleAdsense'
 /**
  *
  * @param {*} param0
@@ -85,6 +85,9 @@ export default function ArticleDetail(props) {
                 <article className='mx-auto'>
                     <WWAds className="w-full" orientation="horizontal" />
                     {post && (<NotionPage post={post} />)}
+                      <div className='mt-2'>
+                        <AdSlot type='native' />
+                      </div>
                     <WWAds className="w-full" orientation="horizontal" />
                 </article>
 
