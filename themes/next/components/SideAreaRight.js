@@ -28,7 +28,18 @@ const SideAreaRight = (props) => {
   const announcementVisible = notice && Object.keys(notice).length > 0
 
   return (<aside id='right' className={(JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE')) ? 'mr-4' : 'ml-4') + ' space-y-4 hidden xl:block flex-col w-60 relative z-10'}>
-
+        {siteConfig('NEXT_RIGHT_AD', null, CONFIG) && <Card className='mb-2'>
+            {/* 展示广告  */}
+            <ins
+                className='adsbygoogle'
+                style={{ display: 'block' }}
+                data-adtest='on'
+                data-ad-client='ca-pub-5901616898778649'
+                data-ad-slot='1013737103'
+                data-ad-format='auto'
+                data-full-width-responsive='true'
+            />
+        </Card>}
         <div className="sticky top-0 space-y-4 w-full">
 
             {announcementVisible && <Card>
@@ -92,18 +103,6 @@ const SideAreaRight = (props) => {
             </Card>}
 
         </div>
-        {siteConfig('NEXT_RIGHT_AD', null, CONFIG) && <Card className='mb-2'>
-            {/* 展示广告  */}
-            <ins
-                className='adsbygoogle'
-                style={{ display: 'block' }}
-                data-adtest='on'
-                data-ad-client='ca-pub-5901616898778649'
-                data-ad-slot='1013737103'
-                data-ad-format='auto'
-                data-full-width-responsive='true'
-            />
-        </Card>}
     </aside>
   )
 }
