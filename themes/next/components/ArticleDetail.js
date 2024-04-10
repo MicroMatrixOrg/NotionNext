@@ -88,7 +88,7 @@ export default function ArticleDetail(props) {
                     {post && (<NotionPage post={post} />)}
                     <WWAds className="w-full" orientation="horizontal" />
                     <div className='mt-2'>
-                      <AdSlot type='native' />
+                      <AdSlot type='flow' />
                     </div>
                 </article>
 
